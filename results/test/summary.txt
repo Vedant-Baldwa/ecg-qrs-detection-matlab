@@ -1,0 +1,3 @@
+CentralWindow = 20
+OverallCentralAcc_percent = 59.9991
+
