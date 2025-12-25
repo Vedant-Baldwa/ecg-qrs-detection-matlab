@@ -1,12 +1,4 @@
 function [r_locs, r_vals, peak_found] = detect_r_peaks(snips, params)
-% detect_r_peaks - simple robust per-snippet R detection
-% Inputs:
-%   snips : N x L matrix (rows = snippets, cols = samples)
-%   params : struct with fields fs, bp_low, bp_high, bp_order, prom_scale, min_dist_ms, center_window_ms
-% Outputs:
-%   r_locs : N x 1 R positions (sample index within snippet)
-%   r_vals : N x 1 bandpassed amplitude at R
-%   peak_found : N x 1 logical
 
 [N, L] = size(snips);
 fs = params.fs;
